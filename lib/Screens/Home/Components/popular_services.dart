@@ -8,26 +8,26 @@ class PopularServices extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(20),
+      padding: const EdgeInsets.all(20),
       child: Column(
         children: [
-          Align(alignment: Alignment.topLeft,child: const Text('Popular Services',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 25),)),
-          Container(
+          const Align(alignment: Alignment.topLeft,child: Text('Popular Services',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 25),)),
+          SizedBox(
             height: 171,
             child: ListView(
               scrollDirection: Axis.horizontal,
-              children: [
+              children: const [
                 Service(name: 'Kitchen Cleaning',img: 'assets/images/Rectangle 37.png',),
                 Service(name: 'Sofa Cleaning',img: 'assets/images/Rectangle 37.png',),
                 Service(name: 'Full House Cleaning',img: 'assets/images/Rectangle 37.png',)
               ],
             ),
           ),
-          Container(
+          SizedBox(
             height: 171,
             child: ListView(
               scrollDirection: Axis.horizontal,
-              children: [
+              children: const [
                 Service(name: 'Kitchen Cleaning',img: 'assets/images/Rectangle 41.png',),
                 Service(name: 'Sofa Cleaning',img: 'assets/images/Rectangle 42.png',),
                 Service(name: 'Full House Cleaning',img: 'assets/images/Rectangle 43.png',)

@@ -10,7 +10,7 @@ class BackGround extends StatelessWidget {
     return Container(
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height,
-      color: Color.fromRGBO(181, 217, 251, 1),
+      color: const Color.fromRGBO(181, 217, 251, 1),
       child: CustomPaint(
         painter: CurvePainter(),
       ),

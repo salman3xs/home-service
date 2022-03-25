@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 class TopSixButton extends StatelessWidget {
-  final List ButtonName = [
+  final List buttonName = [
     'Renovation','Handyman','Home Shifting','Gardening','Declutter','Painting'
   ];
-  final List ButtonImg = [
+  final List buttonImg = [
     'assets/images/Renovation.png','assets/images/Vector.png','assets/images/Group.png','assets/images/Vector (1).png',
     'assets/images/Vector (2).png','assets/images/surface1.png'
   ];
@@ -18,7 +18,7 @@ class TopSixButton extends StatelessWidget {
       height: 240,
       child: GridView.builder(
           itemCount: 6,
-          physics: NeverScrollableScrollPhysics(),
+          physics: const NeverScrollableScrollPhysics(),
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 3,
             mainAxisSpacing: 1,
@@ -26,8 +26,8 @@ class TopSixButton extends StatelessWidget {
           ),
           itemBuilder: (context, index) {
             return TopButton(
-              name: ButtonName[index],
-              img: ButtonImg[index],
+              name: buttonName[index],
+              img: buttonImg[index],
             );
           }),
     );
@@ -55,7 +55,7 @@ class TopButton extends StatelessWidget {
           ),
           Text(
             name,
-            style: TextStyle(color: Colors.black),
+            style: const TextStyle(color: Colors.black),
           )
         ],
       ),

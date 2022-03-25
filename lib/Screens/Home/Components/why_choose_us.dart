@@ -30,7 +30,7 @@ class WhyChooseUs extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: ListTile(
 
-                shape: Border.all(color: Color.fromRGBO(244, 244, 244, 1),width: 3),
+                shape: Border.all(color: const Color.fromRGBO(244, 244, 244, 1),width: 3),
                 title: const Text('Quality Assured',style: TextStyle(fontWeight: FontWeight.bold),),
                 subtitle: const Text('Your satisfaction is guaranteed'),
                 leading: Image.asset('assets/images/Group 52754.png',height: 53,width: 44,),
@@ -39,7 +39,7 @@ class WhyChooseUs extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: ListTile(
-                shape: Border.all(color: Color.fromRGBO(244, 244, 244, 1),width: 3),
+                shape: Border.all(color: const Color.fromRGBO(244, 244, 244, 1),width: 3),
                 title: const Text('Fixed Prices',style: TextStyle(fontWeight: FontWeight.bold),),
                 subtitle: const Text('No hidden costs, all the proces are known and fixed before booking'),
                 leading: Image.asset('assets/images/Group (1).png',height: 53,width: 44,),
@@ -48,7 +48,7 @@ class WhyChooseUs extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: ListTile(
-                shape: Border.all(color: Color.fromRGBO(244, 244, 244, 1),width: 3),
+                shape: Border.all(color: const Color.fromRGBO(244, 244, 244, 1),width: 3),
                 title: const Text('Hassel Free',style: TextStyle(fontWeight: FontWeight.bold),),
                 subtitle: const Text('convenient, time saving and secure'),
                 leading: Image.asset('assets/images/Group 52756.png',height: 53,width: 44,),

@@ -32,7 +32,7 @@ class Qua extends StatelessWidget {
     return Column(
       children: [
         Image.asset(img,height: 45,width: 45,),
-        Text(name,style: TextStyle(fontSize: 12),)
+        Text(name,style: const TextStyle(fontSize: 12),)
       ],
     );
   }
