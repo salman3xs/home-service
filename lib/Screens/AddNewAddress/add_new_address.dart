@@ -26,12 +26,12 @@ class AddAddressPage extends StatelessWidget {
                     Icon(Icons.my_location,color: Colors.white,size: 19,),
                     Text(
                       'Your Current Location',
-                      style: TextStyle(color: Colors.white,fontSize: 21,),
+                      style: TextStyle(color: Colors.white,fontSize: 17,fontWeight: FontWeight.w500),
                     ),
                   ],
                 ),
                 style: ButtonStyle(
-                    fixedSize: MaterialStateProperty.all(Size(322,63)),
+                    fixedSize: MaterialStateProperty.all(const Size(322,63)),
                     backgroundColor: MaterialStateProperty.all(Colors.black),
                     shape :MaterialStateProperty.all<RoundedRectangleBorder>(
                         RoundedRectangleBorder(
@@ -53,12 +53,12 @@ class AddAddressPage extends StatelessWidget {
                     Icon(Icons.search,color: Colors.grey,size: 19,),
                     Text(
                       'Some other Location',
-                      style: TextStyle(color: Colors.grey,fontSize: 21,),
+                      style: TextStyle(color: Colors.grey,fontSize: 16,fontWeight: FontWeight.w500),
                     ),
                   ],
                 ),
                 style: ButtonStyle(
-                    fixedSize: MaterialStateProperty.all(Size(322,63)),
+                    fixedSize: MaterialStateProperty.all(const Size(322,63)),
                     backgroundColor: MaterialStateProperty.all(Colors.white),
                     shape :MaterialStateProperty.all<RoundedRectangleBorder>(
                         RoundedRectangleBorder(

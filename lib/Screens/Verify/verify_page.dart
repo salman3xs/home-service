@@ -18,7 +18,7 @@ class VerifyPage extends StatelessWidget {
             padding: EdgeInsets.all(8.0),
             child: Text(
               'OTP Verification',
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 41),
+              style: TextStyle(fontWeight: FontWeight.w600, fontSize: 30),
             ),
           ),
           Padding(
@@ -28,11 +28,11 @@ class VerifyPage extends StatelessWidget {
               children: const [
                 Text(
                   'Enter the OTP sent to ',
-                  style: TextStyle(fontSize: 21, color: Colors.grey),
+                  style: TextStyle(fontSize: 15, color: Colors.grey,fontWeight: FontWeight.w300),
                 ),
                 Text(
                   '+19879879875',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 21),
+                  style: TextStyle(fontWeight: FontWeight.w600, fontSize: 15),
                 ),
               ],
             ),
@@ -42,7 +42,8 @@ class VerifyPage extends StatelessWidget {
             width: MediaQuery.of(context).size.width,
             fieldWidth: 50,
             style: const TextStyle(
-                fontSize: 17
+                fontSize: 30,
+                fontWeight: FontWeight.w600
             ),
             textFieldAlignment: MainAxisAlignment.spaceAround,
             fieldStyle: FieldStyle.underline,
@@ -53,8 +54,8 @@ class VerifyPage extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Text('OTP not received?',style: TextStyle(color: Colors.grey),),
-              TextButton(onPressed: (){}, child: const Text('RESEND OTP')),
+              const Text('OTP not received?',style: TextStyle(color: Colors.grey,fontWeight: FontWeight.w300, fontSize: 15),),
+              TextButton(onPressed: (){}, child: const Text('RESEND OTP',style: TextStyle(fontWeight: FontWeight.w500, fontSize: 15),)),
             ],
           ),
           TextButton(
@@ -63,10 +64,10 @@ class VerifyPage extends StatelessWidget {
             },
             child: const Text(
               'VERIFY & PROCEED',
-              style: TextStyle(color: Colors.white,fontSize: 21,),
+              style: TextStyle(color: Colors.white,fontSize: 17,fontWeight: FontWeight.w500),
             ),
             style: ButtonStyle(
-                fixedSize: MaterialStateProperty.all(Size(322,63)),
+                fixedSize: MaterialStateProperty.all(const Size(322,63)),
                 backgroundColor: MaterialStateProperty.all(Colors.black),
                 shape :MaterialStateProperty.all<RoundedRectangleBorder>(
                     RoundedRectangleBorder(
